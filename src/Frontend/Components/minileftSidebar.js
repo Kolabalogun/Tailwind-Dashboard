@@ -13,7 +13,7 @@ const MinileftSidebar = () => {
   return (
     <div
       onClick={handletoggleLeftMenu}
-      className="flex items-center py-[10px] cursor-pointer px-[10px] md:px-[15px] bg-[#1c1c1c] flex-col border-r-[1px] border-[#e5e5e5]  h-screen overflow-hidden "
+      className="flex items-center py-[10px] cursor-pointer px-[10px] md:px-[15px] bg-[#1c1c1c] flex-col border-r-[1px] border-[#e5e5e5]  h-screen fixed  overflow-hidden "
     >
       <div className="flex pb-[30px] items-center h-[72px] ">
         <img className="titlelogo" src="ByeWind.png" alt="" />
