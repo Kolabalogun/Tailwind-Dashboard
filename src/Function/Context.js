@@ -27,7 +27,21 @@ const AppProvider = ({ children }) => {
     return { innerWidth, innerHeight };
   }
 
-  const [windowSize, setWindowSize] = useState(window.innerWidth);
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(window.innerWidth);
+    }
+
+    handleWindowResize();
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, [windowSize]);
 
   useEffect(() => {
     if (windowSize < 700) {
@@ -42,11 +56,10 @@ const AppProvider = ({ children }) => {
     if (windowSize > 1380) {
       settoggleRightMenu(true);
     }
-  }, [windowSize]);
+  }, []);
+  console.log(windowSize);
 
-  //   light and Dark mode
-
-  const [mode, setMode] = useState(false);
+  console.log(toggleRightMenu);
 
   return (
     <AppContext.Provider
@@ -60,8 +73,6 @@ const AppProvider = ({ children }) => {
         tcolo,
         tcolor,
         windowSize,
-        mode,
-        setMode,
       }}
     >
       {children}
