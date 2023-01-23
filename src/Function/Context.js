@@ -27,7 +27,7 @@ const AppProvider = ({ children }) => {
     return { innerWidth, innerHeight };
   }
 
-  const [windowSize, setWindowSize] = useState(getWindowSize());
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
 
   useEffect(() => {
     function handleWindowResize() {
@@ -38,12 +38,6 @@ const AppProvider = ({ children }) => {
 
     window.addEventListener("resize", handleWindowResize);
 
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, [windowSize]);
-
-  useEffect(() => {
     if (windowSize < 700) {
       settoggleLeftMenu(null);
     }
@@ -56,10 +50,11 @@ const AppProvider = ({ children }) => {
     if (windowSize > 1380) {
       settoggleRightMenu(true);
     }
-  }, []);
-  console.log(windowSize);
 
-  console.log(toggleRightMenu);
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, [windowSize]);
 
   return (
     <AppContext.Provider

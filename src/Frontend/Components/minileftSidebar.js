@@ -2,14 +2,8 @@ import React from "react";
 import { useGlobalContext } from "../../Function/Context";
 
 const MinileftSidebar = () => {
-  const {
-    toggleLeftMenu,
-    settoggleLeftMenu,
-    handletoggleLeftMenu,
-    toggleRightMenu,
-    settoggleRightMenu,
-    handletoggleRightMenu,
-  } = useGlobalContext();
+  const { toggleLeftMenu, settoggleLeftMenu, handletoggleLeftMenu } =
+    useGlobalContext();
   return (
     <div
       onClick={handletoggleLeftMenu}
