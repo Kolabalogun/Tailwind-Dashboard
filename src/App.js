@@ -15,41 +15,8 @@ function App() {
     toggleRightMenu,
     settoggleRightMenu,
     handletoggleRightMenu,
+    windowSize,
   } = useGlobalContext();
-
-  function getWindowSize() {
-    const { innerWidth, innerHeight } = window;
-    return { innerWidth, innerHeight };
-  }
-
-  const [windowSize, setWindowSize] = useState(getWindowSize());
-
-  useEffect(() => {
-    function handleWindowResize() {
-      setWindowSize(window.innerWidth);
-    }
-
-    window.addEventListener("resize", handleWindowResize);
-
-    if (windowSize < 700) {
-      settoggleLeftMenu(null);
-    }
-    if (windowSize < 1380) {
-      settoggleRightMenu(null);
-    }
-    if (windowSize > 700) {
-      settoggleLeftMenu(true);
-    }
-    if (windowSize > 1380) {
-      settoggleRightMenu(true);
-    }
-
-    console.log(windowSize);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, [windowSize]);
 
   return (
     <div className="flex relative">

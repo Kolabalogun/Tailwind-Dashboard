@@ -21,6 +21,32 @@ const AppProvider = ({ children }) => {
   const tcolor = {
     display: toggleRightMenu ? "flex" : "none",
   };
+
+  function getWindowSize() {
+    const { innerWidth, innerHeight } = window;
+    return { innerWidth, innerHeight };
+  }
+
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
+
+  useEffect(() => {
+    if (windowSize < 700) {
+      settoggleLeftMenu(null);
+    }
+    if (windowSize < 1380) {
+      settoggleRightMenu(null);
+    }
+    if (windowSize > 700) {
+      settoggleLeftMenu(true);
+    }
+    if (windowSize > 1380) {
+      settoggleRightMenu(true);
+    }
+  }, []);
+  console.log(windowSize);
+
+  console.log(toggleRightMenu);
+
   return (
     <AppContext.Provider
       value={{
@@ -32,6 +58,7 @@ const AppProvider = ({ children }) => {
         handletoggleRightMenu,
         tcolo,
         tcolor,
+        windowSize,
       }}
     >
       {children}
