@@ -23,7 +23,7 @@ const Main = ({ windowSize }) => {
         } `}
       >
         <div className="lg:flex lg:flex-row flex-col items-center justify-center flex gap-5 ">
-          <div className=" bg-[#282828] h-[273px] mb-6 lg:mb-0 md:w-[380px] w-[300px]  p-4 relative boxinit ">
+          <div className=" bg-[#282828] h-[273px] mb-6 lg:mb-0 md:w-[380px] w-[280px]  p-4 relative boxinit ">
             <p className="absolute right-2 top-2 text-white">
               Mar 23 to Mar 26
             </p>
@@ -56,7 +56,7 @@ const Main = ({ windowSize }) => {
               <img src="LockSimpleOpen.png" alt="" className="h-8 w-8" />
             </div>
           </div>
-          <div className=" bg-[#282828] h-[273px]  mb-6 lg:mb-0  md:w-[380px] w-[300px] z-0  p-4 relative boxinit ">
+          <div className=" bg-[#282828] h-[273px]  mb-6 lg:mb-0  md:w-[380px] w-[280px] z-0  p-4 relative boxinit ">
             <p className="absolute right-2 top-2 text-white">Mar 30 to Apr 2</p>
 
             <div className="mt-[50px]">
@@ -84,7 +84,7 @@ const Main = ({ windowSize }) => {
         } `}
       >
         <div className="lg:flex lg:flex-row flex-col items-center gap-5 ">
-          <div className=" bg-[#282828] h-[273px] md:w-[380px] w-[300px]   p-4 relative boxinit mb-[30px] lg:mb-0">
+          <div className=" bg-[#282828] h-[273px] md:w-[380px] w-[280px]   p-4 relative boxinit mb-[30px] lg:mb-0">
             <p className="absolute right-2 top-2 text-white">
               Apr 13 to Apr 16
             </p>
@@ -109,7 +109,7 @@ const Main = ({ windowSize }) => {
               <img src="red;pck.png" alt="" className="h-7 w-6" />
             </div>
           </div>
-          <div className=" bg-[#282828] h-[273px] md:w-[380px] w-[300px]   p-4  mb-6 lg:mb-0 relative boxinitmb-[30px] lg:mb-0 ">
+          <div className=" bg-[#282828] h-[273px] md:w-[380px] w-[280px]   p-4  mb-6 relative boxinitmb-[30px] lg:mb-0 ">
             <p className="absolute right-2 top-2 text-white">
               Apr 20 to Apr 23
             </p>
