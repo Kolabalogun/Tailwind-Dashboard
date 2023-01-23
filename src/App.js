@@ -38,7 +38,7 @@ function App() {
         className={` h-full  w-full flex    flex-col ${
           toggleRightMenu && "md:mr-[300px]"
         } overflow-hidden  ${toggleLeftMenu && "md:ml-[280px]"} ${
-          !toggleLeftMenu && "ml-[50px]"
+          !toggleLeftMenu && "ml-[45px]"
         } `}
       >
         <Navbar windowSize={windowSize} />

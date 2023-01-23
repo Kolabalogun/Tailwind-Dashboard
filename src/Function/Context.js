@@ -43,9 +43,10 @@ const AppProvider = ({ children }) => {
       settoggleRightMenu(true);
     }
   }, []);
-  console.log(windowSize);
 
-  console.log(toggleRightMenu);
+  //   light and Dark mode
+
+  const [mode, setMode] = useState(false);
 
   return (
     <AppContext.Provider
@@ -59,6 +60,8 @@ const AppProvider = ({ children }) => {
         tcolo,
         tcolor,
         windowSize,
+        mode,
+        setMode,
       }}
     >
       {children}

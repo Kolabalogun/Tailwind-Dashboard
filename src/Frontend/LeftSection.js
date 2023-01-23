@@ -9,9 +9,15 @@ const LeftSection = () => {
     toggleRightMenu,
     settoggleRightMenu,
     handletoggleRightMenu,
+    mode,
+    setMode,
   } = useGlobalContext();
   return (
-    <div className="flex py-[10px] px-[25px] bg-[#1c1c1c] pt-[15px]  flex-col border-r-[1px] border-[#e5e5e5]  min-h-screen ">
+    <div
+      className={`flex py-[10px] px-[25px] ${
+        mode ? "bg-[aliceblue]" : "bg-[#1c1c1c] "
+      }  pt-[15px]  flex-col border-r-[1px] border-[#e5e5e5]  min-h-screen `}
+    >
       <div className="flex pb-[30px] justify-between items-center h-[72px] ">
         <div className="flex">
           <img className="titlelogo" src="ByeWind.png" alt="" />

@@ -9,6 +9,8 @@ const Navbar = ({ windowSize }) => {
     toggleRightMenu,
     settoggleRightMenu,
     handletoggleRightMenu,
+    mode,
+    setMode,
   } = useGlobalContext();
   return (
     <div className="navbar flex justify-between md:px-6 px-2 py-6 w-full items-center border-b-[1px] border-white">
@@ -41,7 +43,12 @@ const Navbar = ({ windowSize }) => {
           placeholder="search"
         />
 
-        <img className="hidden md:flex px-1 lg:px-4 h-4" src="sun.png" alt="" />
+        <img
+          onClick={() => setMode(!mode)}
+          className="hidden md:flex px-1 lg:px-4 h-4"
+          src="sun.png"
+          alt=""
+        />
         <img
           className="hidden md:flex px-1 lg:px-4 h-4"
           src="ClockCounterClockwise.png"
