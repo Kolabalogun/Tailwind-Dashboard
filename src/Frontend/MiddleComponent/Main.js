@@ -24,7 +24,7 @@ const Main = ({ windowSize }) => {
       >
         <div className="lg:flex lg:flex-row flex-col items-center justify-center flex gap-5 ">
           <div className=" bg-[#282828] h-[273px] mb-6 lg:mb-0 md:w-[380px] w-[280px]  p-4 relative boxinit ">
-            <p className="absolute right-2 top-2 text-white">
+            <p className="absolute right-3 top-3 text-white">
               Mar 23 to Mar 26
             </p>
 
@@ -57,7 +57,7 @@ const Main = ({ windowSize }) => {
             </div>
           </div>
           <div className=" bg-[#282828] h-[273px]  mb-6 lg:mb-0  md:w-[380px] w-[280px] z-0  p-4 relative boxinit ">
-            <p className="absolute right-2 top-2 text-white">Mar 30 to Apr 2</p>
+            <p className="absolute right-3 top-3 text-white">Mar 30 to Apr 2</p>
 
             <div className="mt-[50px]">
               <p className="text-white text-[14px]">Versastyle: Regina</p>
@@ -85,7 +85,7 @@ const Main = ({ windowSize }) => {
       >
         <div className="lg:flex lg:flex-row flex-col items-center gap-5 ">
           <div className=" bg-[#282828] h-[273px] md:w-[380px] w-[280px]   p-4 relative boxinit mb-[30px] lg:mb-0">
-            <p className="absolute right-2 top-2 text-white">
+            <p className="absolute right-3 top-3 text-white">
               Apr 13 to Apr 16
             </p>
 
@@ -110,7 +110,7 @@ const Main = ({ windowSize }) => {
             </div>
           </div>
           <div className=" bg-[#282828] h-[273px] md:w-[380px] w-[280px]   p-4  mb-6 relative boxinitmb-[30px] lg:mb-0 ">
-            <p className="absolute right-2 top-2 text-white">
+            <p className="absolute right-3 top-3 text-white">
               Apr 20 to Apr 23
             </p>
 
