@@ -23,7 +23,7 @@ const Main = ({ windowSize }) => {
         } `}
       >
         <div className="lg:flex lg:flex-row flex-col items-center justify-center flex gap-5 ">
-          <div className=" bg-[#282828] h-[273px] mb-6 lg:mb-0 md:w-[380px] w-[280px]  p-4 relative boxinit ">
+          <div className=" bg-[#282828] mb-6 lg:mb-0 md:w-[380px] w-[280px]  p-4 relative boxinit ">
             <p className="absolute right-3 top-3 text-white">
               Mar 23 to Mar 26
             </p>
@@ -36,7 +36,7 @@ const Main = ({ windowSize }) => {
                 5040 Youge Street., North Yory ON M2N 6RB
               </p>
             </div>
-            <div className="mt-[40px] pl-6 mb-19 flex flex-col">
+            <div className="my-[40px] pl-6 mb-19 flex flex-col">
               <div className="flex items-center pb-4">
                 <img src="Ellipse.png" alt="" className="h-1 w-1" />
                 <p className="pl-4 text-[12px] text-white">Entries Submitted</p>
