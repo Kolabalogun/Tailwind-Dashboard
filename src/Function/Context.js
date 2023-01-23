@@ -42,7 +42,7 @@ const AppProvider = ({ children }) => {
     if (windowSize > 1380) {
       settoggleRightMenu(true);
     }
-  }, []);
+  }, [windowSize]);
 
   //   light and Dark mode
 
