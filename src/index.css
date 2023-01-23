@@ -1,13 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 body {
+  font-family: "Inter", sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1c1c1c;
+  position: relative;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+/* APP JS  */
+
+.mainComponent {
+  display: flex;
+}
+.sideSections {
+  height: 100vh;
+  flex: 1;
+}
+
+.middleSection {
+  height: 100vh;
+  flex: 4;
+}
+
+/* LEFT SECTION  */
+
+.topbar {
+  display: flex;
+  padding-bottom: 30px;
+  align-items: center;
+  height: 72px;
+}
+
+.titlelogo {
+  width: 24px;
+  height: 24px;
+  /* ma-top: 5px; */
+}
+
+.title {
+  color: white;
+  padding-left: 7px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.topleftsectionNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.navsTxt {
+  font-size: 14px;
+  /* color: white; */
+  display: flex;
+
+  background-color: #1c1c1c;
+  border: none;
+}
+
+.elipse {
+  height: 6px;
+  width: 6px;
+}
+
+.dashboardSection {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+}
+.dashboardMenu {
+  display: flex;
+  align-items: center;
+}
+
+.dashboardMenu > img {
+  padding-right: 5px;
+}
+
+.dot {
+  height: 5px;
+  width: 14px;
+}
+
+.vector {
+  height: 18px;
+  width: 23px;
+}
+
+/* Middle Section  */
+.navbar {
+  height: 72px;
+  background-color: #1c1c1c;
+  /* flex: 3; */
+}
+
+.search {
+  top: 7px;
+  left: 7px;
+}
+
+.boxinit {
+  border-radius: 16px;
+}
+
+.selectBtn {
+  border-radius: 16px;
+}
+
+.searchInput {
+  border-radius: 16px;
+}
+
+/* Right SECTION  */
+
+.toprightSection {
+  flex: 1;
+  z-index: 100;
 }
